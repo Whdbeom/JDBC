@@ -1,0 +1,17 @@
+package com.kh.mini.main;
+
+import java.util.Scanner;
+
+import com.kh.jdbc.JDBCTemplate;
+
+public class Main {
+
+	public static final Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		System.out.println("---미니프로젝트---");
+	
+	}
+
+}

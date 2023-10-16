@@ -1,0 +1,39 @@
+package test;
+
+import org.eclipse.ui.console.MessageConsole;
+import org.eclipse.ui.console.ConsolePlugin;
+import org.eclipse.ui.console.IConsole;
+import org.eclipse.ui.console.IConsoleManager;
+import org.eclipse.ui.console.IOConsoleOutputStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+        System.out.println("Hello World");
+        ClearConsole();
+
+	}
+
+	public class ConsoleClearer {
+	    public static void clearConsole() {
+	        MessageConsole myConsole = findConsole("Console Name"); // Replace "Console Name" with the name of your console
+	        if (myConsole != null) {
+	            myConsole.clearConsole();
+	        }
+	    }
+
+	    private static MessageConsole findConsole(String name) {
+	        ConsolePlugin plugin = ConsolePlugin.getDefault();
+	        IConsoleManager consoleManager = plugin.getConsoleManager();
+	        IConsole[] consoles = consoleManager.getConsoles();
+
+	        for (IConsole console : consoles) {
+	            if (console.getName().equals(name) && console instanceof MessageConsole) {
+	                return (MessageConsole) console;
+	            }
+	        }
+	        return null;
+	    }
+
+}
+

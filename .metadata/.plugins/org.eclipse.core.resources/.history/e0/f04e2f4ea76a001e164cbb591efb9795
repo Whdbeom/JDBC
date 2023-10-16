@@ -1,0 +1,35 @@
+package test;
+
+public class Logo {
+
+	public static void main(String[] args) {
+	System.out.println("\r\n"
+			+ "                                                                                                                                                                                                                                                              \r\n"
+			+ "                                                                                                                                                                                                                                                              \r\n"
+			+ "        CCCCCCCCCCCCChhhhhhh                                                                                                    MMMMMMMM               MMMMMMMM                                    kkkkkkkk                                     tttt          \r\n"
+			+ "     CCC::::::::::::Ch:::::h                                                                                                    M:::::::M             M:::::::M                                    k::::::k                                  ttt:::t          \r\n"
+			+ "   CC:::::::::::::::Ch:::::h                                                                                                    M::::::::M           M::::::::M                                    k::::::k                                  t:::::t          \r\n"
+			+ "  C:::::CCCCCCCC::::Ch:::::h                                                                                                    M:::::::::M         M:::::::::M                                    k::::::k                                  t:::::t          \r\n"
+			+ " C:::::C       CCCCCC h::::h hhhhh           eeeeeeeeeeee    rrrrr   rrrrrrrrr   rrrrr   rrrrrrrrryyyyyyy           yyyyyyy     M::::::::::M       M::::::::::M  aaaaaaaaaaaaa  rrrrr   rrrrrrrrr   k:::::k    kkkkkkk eeeeeeeeeeee    ttttttt:::::ttttttt    \r\n"
+			+ "C:::::C               h::::hh:::::hhh      ee::::::::::::ee  r::::rrr:::::::::r  r::::rrr:::::::::ry:::::y         y:::::y      M:::::::::::M     M:::::::::::M  a::::::::::::a r::::rrr:::::::::r  k:::::k   k:::::kee::::::::::::ee  t:::::::::::::::::t    \r\n"
+			+ "C:::::C               h::::::::::::::hh   e::::::eeeee:::::eer:::::::::::::::::r r:::::::::::::::::ry:::::y       y:::::y       M:::::::M::::M   M::::M:::::::M  aaaaaaaaa:::::ar:::::::::::::::::r k:::::k  k:::::ke::::::eeeee:::::eet:::::::::::::::::t    \r\n"
+			+ "C:::::C               h:::::::hhh::::::h e::::::e     e:::::err::::::rrrrr::::::rrr::::::rrrrr::::::ry:::::y     y:::::y        M::::::M M::::M M::::M M::::::M           a::::arr::::::rrrrr::::::rk:::::k k:::::ke::::::e     e:::::etttttt:::::::tttttt    \r\n"
+			+ "C:::::C               h::::::h   h::::::he:::::::eeeee::::::e r:::::r     r:::::r r:::::r     r:::::r y:::::y   y:::::y         M::::::M  M::::M::::M  M::::::M    aaaaaaa:::::a r:::::r     r:::::rk::::::k:::::k e:::::::eeeee::::::e      t:::::t          \r\n"
+			+ "C:::::C               h:::::h     h:::::he:::::::::::::::::e  r:::::r     rrrrrrr r:::::r     rrrrrrr  y:::::y y:::::y          M::::::M   M:::::::M   M::::::M  aa::::::::::::a r:::::r     rrrrrrrk:::::::::::k  e:::::::::::::::::e       t:::::t          \r\n"
+			+ "C:::::C               h:::::h     h:::::he::::::eeeeeeeeeee   r:::::r             r:::::r               y:::::y:::::y           M::::::M    M:::::M    M::::::M a::::aaaa::::::a r:::::r            k:::::::::::k  e::::::eeeeeeeeeee        t:::::t          \r\n"
+			+ " C:::::C       CCCCCC h:::::h     h:::::he:::::::e            r:::::r             r:::::r                y:::::::::y            M::::::M     MMMMM     M::::::Ma::::a    a:::::a r:::::r            k::::::k:::::k e:::::::e                 t:::::t    tttttt\r\n"
+			+ "  C:::::CCCCCCCC::::C h:::::h     h:::::he::::::::e           r:::::r             r:::::r                 y:::::::y             M::::::M               M::::::Ma::::a    a:::::a r:::::r           k::::::k k:::::ke::::::::e                t::::::tttt:::::t\r\n"
+			+ "   CC:::::::::::::::C h:::::h     h:::::h e::::::::eeeeeeee   r:::::r             r:::::r                  y:::::y              M::::::M               M::::::Ma:::::aaaa::::::a r:::::r           k::::::k  k:::::ke::::::::eeeeeeee        tt::::::::::::::t\r\n"
+			+ "     CCC::::::::::::C h:::::h     h:::::h  ee:::::::::::::e   r:::::r             r:::::r                 y:::::y               M::::::M               M::::::M a::::::::::aa:::ar:::::r           k::::::k   k:::::kee:::::::::::::e          tt:::::::::::tt\r\n"
+			+ "        CCCCCCCCCCCCC hhhhhhh     hhhhhhh    eeeeeeeeeeeeee   rrrrrrr             rrrrrrr                y:::::y                MMMMMMMM               MMMMMMMM  aaaaaaaaaa  aaaarrrrrrr           kkkkkkkk    kkkkkkk eeeeeeeeeeeeee            ttttttttttt  \r\n"
+			+ "                                                                                                        y:::::y                                                                                                                                               \r\n"
+			+ "                                                                                                       y:::::y                                                                                                                                                \r\n"
+			+ "                                                                                                      y:::::y                                                                                                                                                 \r\n"
+			+ "                                                                                                     y:::::y                                                                                                                                                  \r\n"
+			+ "                                                                                                    yyyyyyy                                                                                                                                                   \r\n"
+			+ "                                                                                                                                                                                                                                                              \r\n"
+			+ "                                                                                                                                                                                                                                                              \r\n"
+			+ "");
+	}
+
+}

@@ -1,0 +1,93 @@
+package com.kh.mini.member.controller;
+
+import java.util.Scanner;
+
+import com.kh.mini.main.Main;
+import com.kh.mini.member.serivce.MemberService;
+import com.kh.mini.member.vo.MemberVo;
+
+public class MemberController {
+
+	private final MemberService ms;
+	
+	public MemberController() {
+		ms = new MemberService();
+	}
+	// 회원 가입
+	public void join() {
+
+		try {
+			System.out.println("-----회원가입-----");
+			
+			System.out.print("아이디 : ");
+			String id = Main.SC.nextLine();
+			System.out.print("비밀번호 : ");
+			String pwd = Main.SC.nextLine();
+			System.out.print("닉네임 : ");
+			String nick = Main.SC.nextLine();
+			
+			MemberVo vo = new MemberVo();
+			vo.setId(id);
+			vo.setPwd(pwd);
+			vo.setNick(nick);
+
+					int result = ms.join(vo);
+					
+					if(result == 1) {
+						System.out.println("회우너가입 성ㄱㅇ");
+					} else {
+						throw new Exception();
+					}
+		} catch (Exception e) {
+			System.out.println("회원 가입 실패");
+		}
+
+		
+	}
+	// 로그인
+	public void login() {
+		System.out.println("-----로그인-----");
+		
+		System.out.print("아이디 : ");
+		String id = Main.SC.nextLine();
+		System.out.print("비밀번호 : ");
+		String pwd = Main.SC.nextLine();
+		
+		MemberVo vo = new MemberVo();
+		vo.setId(id);
+		vo.setPwd(pwd);
+		
+		try {
+			MemberVo dbVo = ms.login(vo);
+			if(dbVo != null) {
+				Main.loginUser = dbVo;
+				System.out.println("로그인 성공");
+				System.out.println(dbVo.getNick() + "님 안녕하셍ㅊ요");
+			} else {
+				throw new Exception();
+			}
+			
+		} catch (Exception e) {
+			System.out.println("로그인 실패");
+			e.printStackTrace();
+		}
+	}
+	// 회원 탈퇴
+	public void quit() {
+		System.out.println("-----회원 탈퇴-----");
+		
+		
+	}
+	
+	// 마이페이지 (현재 로그인 한 본인 정보 조회)
+	// 비밀번호 수정
+	// 닉네임 수정
+	
+	// 전체 회원 조회 (관리자)
+	// 회원 조회 - 번호
+	// 회원 조회 - 아이디
+	// 회원 조회 - 닉네임
+	// 회원 강제탈퇴
+	
+	
+}

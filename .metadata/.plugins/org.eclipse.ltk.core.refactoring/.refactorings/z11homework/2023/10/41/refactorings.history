@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;boardNo&apos; in &apos;com.kh.app.board.vo.BoardVo.BoardVo(...)&apos; to &apos;no&apos;&#x0D;&#x0A;- Original project: &apos;z11homework&apos;&#x0D;&#x0A;- Original element: &apos;com.kh.app.board.vo.BoardVo.BoardVo(int, String).boardNo&apos;&#x0D;&#x0A;- Renamed element: &apos;boardNo&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;boardNo&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.kh.app.board.vo{BoardVo.java[BoardVo~BoardVo~I~QString;@boardNo!313!323!317!323!I!0!true" name="no" references="true" stamp="1696762602486" version="1.0"/>
+</session>

@@ -1,0 +1,96 @@
+package board.controller;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+import board.service.BoardService;
+import board.vo.BoardVo;
+
+public class BoardController {
+	
+	private final Scanner sc;
+	private final BoardService bs;
+	
+	
+	
+	public BoardController() {
+		sc = new Scanner(System.in);
+		bs = new BoardService();
+	}
+
+
+
+	public void boardMain() {
+		System.out.println();
+		System.out.println("[게시글 목록]");
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.printf("%-30s%-60s%-90s%-120s\n", "번호", "제목", "작성자", "날짜");
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		
+		try {
+			ArrayList<BoardVo> voList = bs.printPost();
+			
+			for(BoardVo vo : voList) {
+				System.out.printf("%-30s%-60s%-90s%-120s\n", vo.getNo(), vo.getTitle(), vo.getWriter_no(), vo.getEnroll_date());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println();
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("<메뉴 선택> 1. 게시글 작성  |  2. 게시글 검색  | 3. 게시글 삭제 ");
+		
+	
+		String select = sc.nextLine();
+		
+		switch(select) {
+			case "1" : writePost(); break;
+			case "2" : findPost(); break;
+			case "3" : deletePost(); break;
+		}
+
+	}
+
+
+
+	private void writePost() {
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.print("제목 : ");
+		String title = sc.nextLine();
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.print("내용 : ");
+		String content = sc.nextLine();
+		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		
+		BoardVo vo = new BoardVo();
+		vo.setTitle(title);
+		vo.setContent(content);
+		
+		try {
+			int result = bs.writePost(vo);
+			
+			if(result == 1) {
+				System.out.println("게시글 작성 성공");
+			} else {
+				throw new Exception();
+			}
+		} catch (Exception e) {
+			System.out.println("로그인하지 않았습니다");
+			e.printStackTrace();
+		}
+		
+	}
+
+
+
+	private void findPost() {
+		
+	}
+
+
+
+	private void deletePost() {
+		
+	}
+}

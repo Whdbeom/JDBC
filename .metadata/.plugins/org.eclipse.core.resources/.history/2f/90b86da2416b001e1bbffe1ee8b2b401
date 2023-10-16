@@ -1,0 +1,36 @@
+package member.service;
+
+import java.sql.Connection;
+
+import db.JDBCTemplate;
+import member.dao.MemberDao;
+import member.vo.MemberVo;
+
+public class MemberService {
+
+	private final MemberDao dao;
+	
+	public MemberService() {
+		super();
+		dao = new MemberDao();
+	}
+
+	public int join(MemberVo vo) throws Exception {
+		
+		Connection conn = JDBCTemplate.getConnection();
+		
+		int result = dao.join(conn, vo);
+		
+		if(result == 1) {
+			JDBCTemplate.commit(conn);
+		} else {
+			JDBCTemplate.rollback(conn);
+		}
+		
+		JDBCTemplate.close(conn);
+		
+		
+		return result;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.kh.mini.main;
+
+import java.util.Scanner;
+
+import com.kh.jdbc.JDBCTemplate;
+import com.kh.mini.member.vo.MemberVo;
+
+public class Main {
+
+	public static final Scanner SC = new Scanner(System.in);
+	public static final MemberVo loginUser;
+	
+	public static void main(String[] args) {
+
+		System.out.println("---미니프로젝트---");
+	
+	}
+
+}

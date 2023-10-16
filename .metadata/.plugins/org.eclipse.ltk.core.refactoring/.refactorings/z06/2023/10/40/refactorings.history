@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;JDBCTemplate.java&apos; to &apos;z06/src/com.kh.app.jdbc&apos;&#x0D;&#x0A;- Original project: &apos;z06&apos;&#x0D;&#x0A;- Destination element: &apos;z06/src/com.kh.app.jdbc&apos;&#x0D;&#x0A;- Original element: &apos;com.kh.app.controller.JDBCTemplate.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.kh.app.jdbc" element1="/src&lt;com.kh.app.controller{JDBCTemplate.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1696411724183" units="1" version="1.0"/>
+</session>

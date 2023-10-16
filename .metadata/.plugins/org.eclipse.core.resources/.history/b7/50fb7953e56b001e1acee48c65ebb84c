@@ -1,0 +1,13 @@
+package com.kh.mini.member.vo;
+
+public class MemberVo {
+
+		private String no;
+		private String id;
+		private String pwd;
+		private String nick;
+		private String enrollDate;
+		private String modifyDate;
+		private String quitYn;
+	
+}

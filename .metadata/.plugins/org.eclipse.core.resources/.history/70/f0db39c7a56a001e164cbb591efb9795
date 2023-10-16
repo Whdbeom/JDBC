@@ -1,0 +1,34 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        System.out.print("콘솔지우기1");
+		        clearConsole();
+		   
+		}
+	
+	 public static void clearConsole() {
+		    for (int i = 0; i < 80; i++)
+		      System.out.println("");
+		  }
+}
+
+
+

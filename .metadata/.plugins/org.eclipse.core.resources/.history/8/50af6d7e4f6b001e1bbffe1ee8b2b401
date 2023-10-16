@@ -1,0 +1,29 @@
+package board.service;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import board.dao.BoardDao;
+import board.vo.BoardVo;
+import db.JDBCTemplate;
+
+public class BoardService {
+
+	private final BoardDao dao;
+	
+	public BoardService() {
+		dao = new BoardDao();
+	}
+
+	public ArrayList<BoardVo> printPost() throws Exception {
+		
+		Connection conn = JDBCTemplate.getConnection();
+		
+		ArrayList<BoardVo> voList = dao.printPost(conn);
+		
+		conn.close();
+		
+		return voList;
+	}
+
+}

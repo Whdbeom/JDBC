@@ -1,0 +1,18 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		        System.out.print("Everything on the console will cleared");
+		        clearConsole();
+		   
+		}
+	
+	 public static void clearConsole() {
+		    for (int i = 0; i < 80; i++)
+		      System.out.println("");
+		  }
+}
+
+
+

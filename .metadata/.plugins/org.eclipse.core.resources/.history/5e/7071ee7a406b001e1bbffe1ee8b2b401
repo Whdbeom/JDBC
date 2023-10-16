@@ -1,0 +1,26 @@
+package member.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import db.JDBCTemplate;
+import member.vo.MemberVo;
+
+public class MemberDao {
+
+	public int join(Connection conn, MemberVo vo) throws Exception {
+		
+		String sql = "INSERT INTO MEMBER(ID, PWD, NICK) VALUES(?, ?, ?)";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		int result = pstmt.executeUpdate();
+		
+		JDBCTemplate.close(pstmt);
+		
+		return result;
+	}
+
+
+
+}

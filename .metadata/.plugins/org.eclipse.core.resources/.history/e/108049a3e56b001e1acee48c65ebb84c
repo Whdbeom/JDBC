@@ -1,0 +1,5 @@
+package com.kh.mini.board.vo;
+
+public class BoardVo {
+
+}
